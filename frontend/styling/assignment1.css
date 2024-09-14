@@ -1,0 +1,42 @@
+/* assignment1 css */
+
+img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+    border: 5px black;
+    
+}
+
+h1{
+
+    padding-left: 65px;
+    color: orangered;
+
+}
+
+p{
+    padding-left: 65px;
+    padding-right: 75px;
+    font-size: 22px;
+}
+
+ul{
+
+    padding-left: 135px;
+    font-size: 22px;
+
+}
+
+table{
+    
+    font-size: 19px;
+    padding-left: 65px;
+    border-spacing:10px;
+}
+
+figurecaption{
+    padding-left: 650px;
+}
