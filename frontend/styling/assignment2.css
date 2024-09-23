@@ -1,0 +1,212 @@
+
+.container {
+    width: 600px;
+    margin: 16px auto;
+    padding: 20px;
+    border: 2px solid #d3d3d3;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container2{
+
+    
+    width: 670px;
+    height: auto;
+    margin: 53px auto;
+    border-color: black;
+    border: 4px solid black;
+    background-color: rgb(116, 171, 243);
+
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size:65px;
+    font-family:sans-serif;
+    margin: 30px;
+    text-align: center;
+    padding-bottom: 85px;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    border-radius: 0px;
+}
+
+th {
+    background-color: #444;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+td {
+    font-size: 14px;
+}
+
+.schedule-container {
+    width: 60%; 
+    margin: 30px auto;
+    
+    border: 1px solid #f1c1c1;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-right: auto;
+    padding-bottom: 100px;
+}
+
+.name-header{
+    float: left;
+    padding-left: 40px;
+}
+
+
+
+.semester-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.semester-schedule th, .semester-schedule td {
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+    font-family: 'Arial', sans-serif;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 20px;
+   
+}
+
+.semester-schedule th {
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+.semester-schedule td {
+    background-color: #f9f9f9;
+    border-radius: 0px;
+}
+
+.semester-schedule td:first-child {
+    background-color: #e3c09f;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+.semester-schedule tr:nth-child(2) {
+    background-color: white; 
+    color:black;
+}
+
+.semester-schedule tr:nth-child(2) td:nth-child(6){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(3) td:nth-child(2){
+    background-color: rgb(173, 173, 233);
+    color:black;
+}
+
+
+.semester-schedule tr:nth-child(3) td:nth-child(4){
+    background-color: rgb(173, 173, 233);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(3) td:nth-child(6){
+    background-color: rgb(173, 173, 233);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(4) td:nth-child(3){
+    background-color: rgb(101, 24, 151);
+    color: white;
+}
+
+.semester-schedule tr:nth-child(4) td:nth-child(5){
+    background-color: rgb(101, 24, 151);
+    color: white;
+}
+
+.semester-schedule tr:nth-child(5) td:nth-child(6){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(6) td:nth-child(3){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(6) td:nth-child(5){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(6) td:nth-child(6){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(7) td:nth-child(2), .semester-schedule tr:nth-child(9) td:nth-child(4), .semester-schedule tr:nth-child(8) td:nth-child(4), .semester-schedule tr:nth-child(9) td:nth-child(5){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(8) td:nth-child(2){
+    background-color: rgb(168, 137, 78);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(7) td:nth-child(3){
+    background-color: rgb(29, 212, 100);
+    color: black;
+}
+
+.semester-schedule tr:nth-child(7) td:nth-child(5){
+    background-color: rgb(29, 212, 100);
+    color: black;
+}
+
+.centered{
+    text-align:center;
+    font-size: 35px;
+}
+
