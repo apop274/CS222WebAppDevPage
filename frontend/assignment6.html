@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <script type="text/javascript" src="js/assignment62.js"></script>
+</head>
+<body>
+
+    <fieldset>
+
+        <legend>Calculate Page Chart:</legend>
+        <p>
+
+            <label for="distance">Distance</label>
+            <br>
+            <input type="number" id="distance">mi
+        </p>
+
+        <p>
+            <label for="pace">Target Pace</label>
+            <br>
+            <input type="text" id="pace"> min/mi (mm:ss)
+        </p>
+
+        <button type="button" name="button" onclick="paceCalculate();">Calculate</button>
+
+    </fieldset>
+
+    <div>
+        <p></p><b>Mile Time</b></p>
+
+        <table id="paceTable">
+            <thead>
+                <tr>
+                    <th>Mile</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+    </div>
+    
+</body>
+</html>
