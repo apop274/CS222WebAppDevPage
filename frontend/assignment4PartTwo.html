@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/assignment4PartTwo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Length Converter</h1>
+        <form id="converterForm">
+            <div class="input-group">
+                <input type="number" id="value" placeholder="Enter value" required>
+                <select id="unit">
+                    <option value="inches">Inches</option>
+                    <option value="centimeters">Centimeters</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Convert to:</legend>
+                <div class="radio-group">
+                    <input type="radio" id="toInches" name="conversion" value="inches">
+                    <label for="toInches">Inches</label>
+                    <input type="radio" id="toCentimeters" name="conversion" value="centimeters" checked>
+                    <label for="toCentimeters">Centimeters</label>
+                </div>
+            </fieldset>
+            <button type="button" onclick="convert()">Convert</button>
+        </form>
+        <p id="result"></p> 
+    </div>
+   
+</body>
+</html>
