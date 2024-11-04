@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Texting Tutor</title>
+    <script type='text/javascript' src="js/tutor.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body onload="setup()">
+    <div data-role="page">
+        <div data-role=header>
+            <h1>Texting Tutor App</h1>
+        </div>
+        <div data-role="content">
+
+            <!-- SET TO TYPE OF TEXTING -->
+            <fieldset data-role="controlgroup">
+                <legend>Specify you texting level:</legend>
+                <!-- OPTION 1: BEGINNER -->
+                <input type="radio" name="units" id="beginner" value="beginner" checked="checked">
+                <label for="beginner">Beginner</label>
+                <!-- OPTION 2: ADVANCED -->
+                <input type="radio" name="units" id="advanced" value="advanced">
+                <label for="advanced">Advanced</label>
+            </fieldset>
+
+            <!-- START BUTTON -->
+            <button onclick="startIt();">
+                Click this button to start a test.
+            </button>
+
+            <!-- INPUT AND OUTPUT TEXT FIELDS -->
+            <br><br>
+            <label for="textMsgField">The text you will type will appear here:</label>
+            <input style="background:yellow;" type="text" id="textMsgField" disabled>
+            <label for="typist_text">Enter Your Text here:</label>
+            <input type="text" id="typist_text">
+
+
+            <!-- STOP BUTTON -->
+            <button onclick="stopIt();">
+                Click this button when you are done typing.
+            </button>
+
+            <hr>
+            <!-- TEXTING RESULTS -->
+            <img id="star_img" src="media/blank.png" width="100"><br>
+            <p id="answer"></p>
+        </div>
+    </div>
+</body>
+
+</html>
