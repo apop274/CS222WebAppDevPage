@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 9</title>
+</head>
+<body>
+    <h2>Listing of Websites of Interest</h2>
+    <form action="php/assignment9.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">E-mail address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <p>Choose from the following categories to receive a list of websites:</p>
+        <label><input type="radio" name="category" value="Books" required> Books</label><br>
+        <label><input type="radio" name="category" value="Computers" required> Computers</label><br>
+        <label><input type="radio" name="category" value="Music" required> Music</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
