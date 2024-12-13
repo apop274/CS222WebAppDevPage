@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/assignment11.css">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="php/signup3.php" method="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required>
+        
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+</body>
+</html>
