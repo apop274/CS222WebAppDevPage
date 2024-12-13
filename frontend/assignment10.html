@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Culinary Quiz</title>
+    <script>
+        async function fetchQuestion() {
+            const category = document.getElementById('category').value;
+            if (!category) {
+                alert('Please select a category.');
+                return;
+            }
+
+            // Fetch question from PHP backend
+            const response = await fetch(`php/assignment10.php?category=${category}`);
+            const data = await response.json();
+
+            if (data.error) {
+                document.getElementById('quiz-container').innerHTML = `<p>${data.error}</p>`;
+                return;
+            }
+
+            // Display the question and options
+            const quizContainer = document.getElementById('quiz-container');
+            quizContainer.innerHTML = `
+                <p>What answer best applies to the ${category}: <strong>${data.term}</strong>?</p>
+                ${data.options.map(option => `
+                    <button onclick="checkAnswer('${data.correct}', '${option}')">${option}</button>
+                `).join('<br>')}
+            `;
+        }
+
+        function checkAnswer(correct, selected) {
+            const result = document.getElementById('result');
+            if (correct === selected) {
+                result.textContent = 'You are correct!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'You are incorrect.';
+                result.style.color = 'red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Culinary Quiz</h2>
+    <label for="category">Select a category of culinary terms:</label>
+    <select id="category">
+        <option value="">-- Select --</option>
+        <option value="food">Food</option>
+        <option value="condiment">Condiment</option>
+    </select>
+    <button onclick="fetchQuestion()">Build a Question</button>
+
+    <div id="quiz-container"></div>
+    <p id="result"></p>
+</body>
+</html>
