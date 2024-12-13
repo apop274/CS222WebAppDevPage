@@ -1,44 +1,101 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Popov's CS222 Website</title>
+    <title>CS222 Web Application Development</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="css/styles.css">
-  
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f093fb, #f5576c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            animation: slideSides 4s infinite alternate ease-in-out;
+        }
+
+        @keyframes slideSides {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+        .assignments {
+            margin-top: 2rem;
+        }
+
+        .assignments a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .assignments a:hover {
+            background: #fff;
+            color: #f5576c;
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Alex Popov's CS222 Web Application Development Webpage!</h1>
-
-    <br/>
-    <br/>
-    <br/>
-   
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-    <a href="assignment1.html">Assignment1</a> <br/>
-    <a href="assignment2.html">Assignment2</a> <br/>
-    <a href="assignment2.html">Assignment3</a> <br/>
-    <a href="assignment2.html">Assignment4</a> <br/>
-    <a href="assignment2.html">Assignment5</a> <br/>
-    <a href="assignment2.html">Assignment6</a> <br/>
-    <a href="assignment2.html">Assignment7</a> <br/>
-    <a href="assignment2.html">Assignment8</a> <br/>
-    <a href="assignment2.html">Assignment9</a> <br/>
-    <a href="assignment2.html">Assignment10</a> <br/>
-    <a href="assignment2.html">Assignment11</a> <br/>
-    <a href="assignment2.html">Assignment12</a> <br/>
-
+    <div class="container">
+        <h1>Welcome to Alex Popov's CS222 Web Application Development Webpage!</h1>
+        <div class="assignments">
+            <a href="assignment1.html">Assignment 1</a>
+            <a href="assignment2.html">Assignment 2</a>
+            <a href="assignment3.html">Assignment 3</a>
+            <a href="assignment4.html">Assignment 4</a>
+            <a href="assignment5.html">Assignment 5</a>
+            <a href="assignment6.html">Assignment 6</a>
+            <a href="assignment7.html">Assignment 7</a>
+            <a href="assignment8.html">Assignment 8</a>
+            <a href="assignment9.html">Assignment 9</a>
+            <a href="assignment10.html">Assignment 10</a>
+            <a href="assignment11.html">Assignment 11</a>
+           
+        </div>
+        <footer>
+            <p>&copy; 2024 Alex Popov. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
